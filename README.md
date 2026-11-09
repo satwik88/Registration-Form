@@ -4,6 +4,8 @@ An online registration form built using HTML, CSS, JavaScript, jQuery and PHP. T
 
 HTML5 · CSS3 · JavaScript · jQuery · PHP
 
+Live Website : https://satwik.xo.je
+
 ## About the project
 
 This project is an online registration form developed as part of the Web Technology Lab assignment. It provides a simple interface for users to enter their personal and academic information.
