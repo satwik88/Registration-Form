@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="form-container">
+
+        <div class="form-header">
+            <h1>Online Registration Form</h1>
+            <p>Fill out the following information to complete your registration.</p>
+            <hr>
+        </div>
+
+        <form action="process.php" method="POST" id="registrationForm">
+
+            <div class="question-card">
+                <label>Full Name</label>
+                <input type="text" name="fullname" id="fullname"
+                       placeholder="Your answer" required>
+            </div>
+
+            <div class="question-card">
+                <label>Email Address</label>
+                <input type="email" name="email" id="email"
+                       placeholder="Your answer" required>
+            </div>
+
+            <div class="question-card">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" id="phone"
+                       placeholder="Your answer"
+                       pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+
+            <div class="question-card">
+                <label>Date of Birth</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+
+            <div class="question-card">
+                <label>Gender</label>
+
+                <div class="radio-option">
+                    <input type="radio" name="gender" value="Male" required>
+                    <span>Male</span>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" name="gender" value="Female">
+                    <span>Female</span>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" name="gender" value="Other">
+                    <span>Other</span>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <label>Course</label>
+                <select name="course" id="course" required>
+                    <option value="">Choose</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Science">Information Science</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Civil">Civil</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label>Address</label>
+                <textarea name="address" id="address"
+                          placeholder="Your answer" required></textarea>
+            </div>
+
+            <div class="button-section">
+                <button type="submit">Submit</button>
+                <button type="reset" class="clear-btn">Clear form</button>
+            </div>
+
+        </form>
+
+        <div class="footer">
+            | Assignment-2 | Satwik Raj | 1RF24CS143 |
+        </div>
+
+    </div>
+</body>
+</html>
